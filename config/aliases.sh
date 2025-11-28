@@ -174,10 +174,10 @@ alias ma="micromamba activate"
 alias md="micromamba deactivate"
 denv() {
   local env_name="${1:-distill-312}"
-  if [ -d "/workspace/users/yuqin/env/$env_name" ]; then
-    source "/workspace/users/yuqin/env/$env_name/bin/activate"
-  elif [ -d "/workspace-vast/users/yuqin/env/$env_name" ]; then
-    source "/workspace-vast/users/yuqin/env/$env_name/bin/activate"
+  if [ -d "/workspace/yuqin/env/$env_name" ]; then
+    source "/workspace/yuqin/env/$env_name/bin/activate"
+  elif [ -d "/workspace-vast/yuqin/env/$env_name" ]; then
+    source "/workspace-vast/yuqin/env/$env_name/bin/activate"
   else
     echo "Environment '$env_name' not found in /workspace or /workspace-vast" >&2
   fi
