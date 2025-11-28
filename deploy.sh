@@ -54,4 +54,8 @@ fi
 # echo "changing default shell to zsh"
 # chsh -s $(which zsh)
 
+# Git config
+git config --global user.email "yq23601@gmail.com"
+git config --global user.name smallskys
+
 zsh
